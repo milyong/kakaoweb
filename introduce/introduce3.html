@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>Message</title>
+</head>
+
+<body>
+  <script>
+    function getMessage(name) {
+      return `Hello, ${name}...`;
+    }
+
+    const message = getMessage('Ornella');
+    document.write(message);
+
+    function introduction1() {
+      //document.write("안녕하세요");
+      document.body.innerHTML="안녕하세요";
+    }
+
+    function introduction2() {
+      //document.write("컴퓨터공학전공 3학년입니다.");
+      document.body.innerHTML="컴퓨터공학전공 3학년입니다.";
+    }
+
+    function introduction3() {
+      //document.write("감사합니다");
+      document.body.innerHTML="감사합니다.";
+    }
+
+    let introIndex = 0;
+    const intros = [introduction1, introduction2, introduction3];
+
+    setInterval(() => {
+      intros[introIndex]();
+      
+      introIndex = (introIndex + 1) % intros.length;
+    }, 3000);
+    
+  </script>
+</body>
+
+</html>
