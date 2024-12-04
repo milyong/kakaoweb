@@ -1,0 +1,119 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+#left-container {
+    background-color: #eee;
+    width: 15%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+#right-container {
+    background-color: #eee;
+    width: 15%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+#left-container {
+    left: 0px;
+    }
+#right-container {
+    right: 0px;
+    }
+.container {
+    background-color: #eee;
+    width: 15%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+.plant-holder {
+    position: relative;
+    height: 13%;
+    left: -10px;
+}
+.plant {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    max-width: 180px;
+    max-height: 80px;
+    z-index: 1;
+    cursor: move;
+}
+.jar-walls {
+    height: 80%;
+    width: 60%;
+    background: #d1e1df;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.5;
+    z-index: -99;
+    border-radius: 15px;
+}
+.jar-top {
+    width: 50%;
+    height: 5%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    z-index: 1;
+    border-radius: 15px;
+}
+.jar-bottom {
+    width: 50%;
+    height: 1%;
+    background: #d1e1df;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+    border-radius: 15px;
+    }
+.dirt {
+    width: 60%;
+    height: 5%;
+    background: #3a241d;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    bottom: 1%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
+}
+.jar-glossy-long {
+    width: 5%;
+    height: 30%;
+    background: white;
+    position: absolute;
+    bottom: 15.5%;
+    left: 5%;
+    opacity: 0.7;
+    z-index: 1;
+    border-radius: 15px;
+}
+.jar-glossy-short {
+    width: 5%;
+    height: 3%;
+    background: white;
+    position: absolute;
+    bottom: 50.5%;
+    left: 5%;
+    opacity: 0.7;
+    z-index: 1;
+    border-radius: 15px;
+}
