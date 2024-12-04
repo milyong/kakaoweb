@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국기 맞히기 퀴즈</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+      color: #333;
+    }
+    h1 {
+      background-color: #4caf50;
+      color: white;
+      margin: 0;
+      padding: 15px;
+      border-bottom: 5px solid #388e3c;
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      margin: 20px auto;
+      border: 5px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    #quizInput {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin: 20px auto;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+      outline: none;
+    }
+    button {
+      margin: 10px 5px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #388e3c;
+    }
+    #quizFeedback {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #4caf50;
+    }
+    body {
+      width: 600px;
+      height: 500px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>국기 맞히기 퀴즈</h1>
+  <img id="countryFlag" src="" alt="국기 이미지">
+  <div>
+    <input type="text" id="quizInput" placeholder="나라 이름을 입력하세요">
+    <button id="submitBtn">정답 확인</button>
+    <button id="newCountryBtn">새로운 퀴즈</button>
+  </div>
+  <div id="quizFeedback"></div>
+  <script src="country.js"></script>
+</body>
+</html>

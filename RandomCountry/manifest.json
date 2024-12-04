@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Country Quiz",
+    "description": "국기 이미지를 보고 국가 이름을 맞히는 퀴즈 게임",
+    "version": "1.0",
+    "action": {
+      "default_popup": "country.html"
+    },
+    "permissions": []
+  }
+  
